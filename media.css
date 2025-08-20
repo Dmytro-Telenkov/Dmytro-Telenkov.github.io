@@ -17,13 +17,13 @@
 	header {height: 70vw;}
 	.head_kontakt, footer {font-size: 10px;}
 	.header-right {font-size: 12px;}
-	.head_left_bot {margin-bottom: 25px;}
+	.head_left_bot {margin-bottom: 30px;}
 	.photo-container {width: 70%;}
 	.header-left, .header-right {padding-top: 5%;}
 	.zaslugi {bottom: 4%;}
 	.projects_inv {width: 100%; border-right: none; position: revert !important; padding: 10px 0;}
-	.projects_inv, .osvita_content, .list {font-size: 12px;}
-	a.show_modal {font-size: 10px;}
+	.projects_inv, .osvita_content, .list {font-size: 16px;}
+	a.show_modal {font-size: 14px;}
 	.projects_img img {width: 20%;}
 	.osvita {background-position: top center; background-size: cover;}
 	footer .wrap {display: grid; line-height: 130%;}
