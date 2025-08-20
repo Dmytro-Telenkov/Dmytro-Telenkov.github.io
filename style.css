@@ -1,0 +1,181 @@
+@font-face {
+	font-family: 'Times New Roman';
+	src: url('timesnewromanpsmt.ttf'); /* подключён как в твоём примере */
+}
+
+body, html {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Times New Roman', Times, serif;
+	background: #D9D9D9;
+}
+header {
+	background: url("img/bg_header.png") no-repeat;
+	background-size: 100% 100%;
+	width: 100%;
+	height: 50vw;
+	color: #fff;
+	margin-top: 0;
+	position: relative;
+	box-sizing: border-box;
+	box-shadow: 0px 8px 1px 0px rgba(0,0,0,0.25);
+}
+.wrap {width: 96%; margin: 0 auto;position: relative; box-sizing: border-box; display: flow-root;}
+.head_tv {width: 93%; margin: 0 auto; position: relative; height: 100%;}
+.header-content {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-start;
+	width: 100%;
+	padding-left: 10px;
+	padding-right: 10px;
+	height: 90%;
+}
+.header-left {width: 50%;
+	padding-top: 3%;
+	padding-left: 2%;
+	padding-bottom: 4%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+    justify-content: space-between;
+}
+.photo-container {margin-left: -10px; width: 50%}
+.head_left_bot {margin-bottom: 20px;}
+.logo {width: 100%; object-fit: cover;}
+.header-right {width: 50%;
+	font-size: 2vw;
+	line-height: 1.2;
+	padding-top: 3%;
+	padding-right: 2%;
+	text-align: right;
+}
+h1 {font-size: 3vw;
+	margin: 0;
+	font-weight: lighter;
+	text-transform: uppercase;
+}
+h2 {font-size: 2.6vw; text-align: center;}
+hr {border: 1px solid #000;}
+.slogan {font-size: 1.6vw;line-height: 2vw; margin-top: 1%;}
+.head_kontakt {font-size: 1vw; line-height: 1.35vw;}
+.head_kontakt {margin: 2% 0;}
+.head_kontakt a {color: #fff;}
+.zaslugi {
+	width: 104%;
+	margin-left: -2%;
+	background: #1d1d1d;
+	color: #fff;
+	overflow: hidden;
+	white-space: nowrap;
+	font-size: 20px;
+	font-family: 'Times New Roman', Times, serif;
+	padding: 10px 0;
+	position: absolute;
+	bottom: 6%;
+}
+.marquee {width: 100%; overflow: hidden; position: relative;}
+.marquee-content {
+	display: inline-block;
+	white-space: nowrap;
+	will-change: transform;
+	animation: marquee-scroll 25s linear infinite;
+	padding-left: 100%;
+}
+@keyframes marquee-scroll {
+	0%   { transform: translateX(0%); }
+	100% { transform: translateX(-100%); }
+}
+.projects_block {box-shadow: inset 0px -23px 39px 0px rgba(0,0,0,0.25);}
+.projects {position: relative; padding-bottom: 30px; width: 90%; margin: 0 auto;}
+
+/* Блоки по умолчанию (3 колонки) */
+.projects_inv {
+  width: 30%;
+  padding: 10px 10px 20px 10px;
+  font-size: 1.4vw;
+  text-align: center;
+  box-sizing: border-box;
+  float: left;
+  border-right: 3px solid #000; /* линия между колонками */
+  margin-bottom: 0; /* Masonry расставит блоки без отступа */
+}
+a.show_modal {text-decoration: none;
+	color: #000;
+	text-align: right;
+	width: 100%;
+    display: block;
+    font-size: 1vw;
+    padding-right: 5%;
+    box-sizing: border-box;
+	font-style: italic;
+}
+.projects_img {text-align: left; padding-top: 20px;}
+.projects_img img {width: 80%;}
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.modal.show {display: block; opacity: 1;}
+.modal_content {
+    background-color: #fff;
+    margin: 5% auto;
+    padding: 20px 20px 10px 20px;
+    width: 60%;
+    border-radius: 8px;
+    position: relative;
+    transform: translateY(-50px);
+    transition: transform 0.3s ease;
+	overflow-y: auto;
+	background: #d9d9d9;
+	box-shadow: inset 0px -3px 9px 0px rgba(0,0,0,0.25);
+	max-height: 80vh;
+	 scroll-behavior: smooth;
+}
+.modal.show .modal_content {transform: translateY(0);}
+.close {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+/* Для Chrome, Edge, Safari */
+.modal_content::-webkit-scrollbar {width: 8px;               /* ширина скролла */}
+.modal_content::-webkit-scrollbar-track {
+    background: #f0f0f0;      /* фон дорожки */ border-radius: 8px;}
+.modal_content::-webkit-scrollbar-thumb {
+    background-color: #888;   /* цвет ползунка */
+    border-radius: 8px;
+    border: 2px solid #d9d9d9; /* отступ от края */
+}
+.modal_content::-webkit-scrollbar-thumb:hover {background-color: #555;   /* цвет при наведении */}
+/* Для Firefox */
+.modal_content {
+    scrollbar-width: thin;     /* тонкий скролл */
+    scrollbar-color: #888 #f0f0f0; /* цвет ползунка и дорожки */
+	text-align: left;
+}
+.osvita {background: #060117 url("img/osvita.png") no-repeat fixed right;
+	background-size: contain;
+	color: #fff;
+	min-height: 50vw;
+}
+.osvita_content {width: 50%; text-align: center; font-size: 1.3vw; line-height: 2vw; margin: 70px 0;}
+.osvita_content p {padding-bottom: 50px;}
+.black {background: #1d1d1d; color: #D9D9D9; margin-top: 0; box-shadow: 0px -3px 9px 0px rgba(0,0,0,0.25);}
+.list { font-size: 1.3vw; line-height: 2vw;}
+footer {background: #1D1D1D; color: #FFFFFF; padding: 10px;}
+footer .wrap {display: flex; justify-content: space-around;}
+footer a {text-decoration: none; color: #fff;}
+
