@@ -1,21 +1,33 @@
-@media only screen and (min-width : 601px) and (max-width : 991px) {
-  .projects_inv {
-    width: 48%;
-    border-right: 3px solid #000;
-  }
-	.head_kontakt {font-size: medium; line-height: 120%;}
-	.projects_inv, .osvita_content, .list {font-size: larger;}
-	a.show_modal {font-size: medium;}
-	.list {line-height: 120%;}
+@media only screen and (max-width : 991px) {
+  .projects_inv {width: 48%; border-right: 3px solid #000;  }
+	.head_kontakt, footer {font-size: 12px; line-height: 120%;}
+	.header-right {font-size: 14px;}
+	.zaslugi {font-size: 14px; padding: 5px 0;}
+	.projects_inv, .osvita_content, .list {font-size: 14px; line-height: 120%;}
+	projects_inv {padding: 5px 0 10px 0}
+	.projects_img {padding-top: 0;}
+	.projects_img img {width: 40%;}
+	a.show_modal {font-size: 12px;}
+	.osvita_content p {padding-bottom: 15px;}
+	.osvita_content {margin: 50px 0 0 0}
 }
 
-/* Адаптив — 1 колонка */
 @media only screen and (max-width : 600px) {
-	.projects_inv {
-        width: 100%;
-        border-right: none;
-        position: revert !important;
-    }
+	h2 {font-size: 14px;}
+	header {height: 70vw;}
+	.head_kontakt, footer {font-size: 10px;}
+	.header-right {font-size: 12px;}
+	.head_left_bot {margin-bottom: 25px;}
+	.photo-container {width: 70%;}
+	.header-left, .header-right {padding-top: 5%;}
+	.zaslugi {bottom: 4%;}
+	.projects_inv {width: 100%; border-right: none; position: revert !important; padding: 10px 0;}
+	.projects_inv, .osvita_content, .list {font-size: 12px;}
+	a.show_modal {font-size: 10px;}
+	.projects_img img {width: 20%;}
+	.osvita {background-position: top center; background-size: cover;}
+	footer .wrap {display: grid; line-height: 130%;}
 }
+
 
 
